@@ -14,8 +14,20 @@ WHEN I refresh the page
 THEN the saved events persist
 */
 
-//Today's Date
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+ //Today's Date
+ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+
+function plannerSave() {
+  $(".saveBtn").on("click", function() {
+    var planTime = $(this).siblings(".planner").text();
+    var planText = $(this).siblings(".planText").val();
+
+    localStorage.setItem(planTime, JSON.stringify(planText));
+  })
+};
+
+function plannerLoad() {}
+
 
 
 // Change textarea color based on time of day
@@ -38,23 +50,6 @@ function timeIsNow() {
   })
 };
 
-
-//Save Function
-function plannerSave() {
-  $(".saveBtn").on("click", function () {
-    var info = $(".planner").each;
-        // Save data to local storage
-        localStorage.setItem("Information", info);
-  });
-}
-
-//Load Function
-function plannerLoad() {
-  localStorage.getItem(plannerSave);
-
-}
-
-timeIsNow();
-plannerLoad();
 plannerSave();
+timeIsNow();
 
