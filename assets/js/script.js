@@ -41,20 +41,17 @@ function timeIsNow() {
 
 //Save Function
 function plannerSave() {
-
-  $("#sveBtn").on("click", function () {
-    var info = $(".planner");
+  $(".saveBtn").on("click", function () {
+    var info = $(".planner").each;
         // Save data to local storage
         localStorage.setItem("Information", info);
-
-        console.log(info);
   });
 }
 
 //Load Function
 function plannerLoad() {
-  //Load from Local Storage
-  localStorage.getItem(info);
+  localStorage.getItem(plannerSave);
+
 }
 
 timeIsNow();
