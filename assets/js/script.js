@@ -1,34 +1,23 @@
-/*
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-*/
-
  //Today's Date
  $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-function plannerSave() {
+ //Save Function
   $(".saveBtn").on("click", function() {
-    var planTime = $(this).siblings(".planner").text();
+    var planTime = $(this).parent().attr("id");
     var planText = $(this).siblings(".planText").val();
 
     localStorage.setItem(planTime, JSON.stringify(planText));
-  })
-};
+  });
 
-function plannerLoad() {}
+//Load Function
+$(".time-block").each(function () {
+  var loadPlan = $(this).attr("id");
+  var planLoad = localStorage.getItem(loadPlan);
 
-
+  if (planLoad !== null) {
+      $(this).children(".planText").val(planLoad);
+  }
+});
 
 // Change textarea color based on time of day
 function timeIsNow() {
@@ -39,17 +28,22 @@ function timeIsNow() {
     var currentHour = parseInt($(this).attr("id"));
 
     if (currentHour > currentTime) {
+      $(this).removeClass("present");
+      $(this).removeClass("past");
       $(this).addClass("future");
     }
     else if (currentHour === currentTime) {
+      $(this).removeClass("future");
+      $(this).removeClass("past");
       $(this).addClass("present");
     } 
     else {
+      $(this).removeClass("future");
+      $(this).removeClass("present");
       $(this).addClass("past");
     };
   })
 };
 
-plannerSave();
 timeIsNow();
 
