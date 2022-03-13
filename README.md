@@ -24,6 +24,6 @@ tedmjablonowski@gmail.com
 
 https://tedmjablonowski.github.io/Friendly-Parakeet-Password-Generator/
 
-![screenshot](https://github.com/tedmjablonowski/The-Riddler-s-Game/blob/main/assets/images/bat-quiz.jpg)
+![screenshot](https://github.com/tedmjablonowski/Work-Day-Scheduler/blob/main/assets/images/work%20day%20planner%20screenshot.jpg)
 
 ![The Bat-Coder](https://github.com/tedmjablonowski/Ted-Jablonowski-s-Portfolio/blob/main/assets/images/bat-png.png)
