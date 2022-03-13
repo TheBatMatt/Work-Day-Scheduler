@@ -16,13 +16,13 @@ Royal Blue represents future hours.
 Red represents the current hour.
 Gray represents past hours.
 
-The planner is currently structued on a typcai 9-5 work shift.
+The planner is currently structured on a typcai 9-5 work shift. If I decide to go back this this in the future, I may make it into a 12 hour 6am-6pm planner. 
 
 
 Feel free to reach out to me at:
 tedmjablonowski@gmail.com
 
-https://tedmjablonowski.github.io/Friendly-Parakeet-Password-Generator/
+https://tedmjablonowski.github.io/Work-Day-Scheduler/
 
 ![screenshot](https://github.com/tedmjablonowski/Work-Day-Scheduler/blob/main/assets/images/work%20day%20planner%20screenshot.jpg)
 
