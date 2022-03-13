@@ -28,7 +28,7 @@ var seventeen = $("#17");
 //Load Function
 function plannerLoad() {
 $(".time-block").each(function () {
-  //Targets id of the parent.
+  //Targets id of the parent. This took the full 2 weeks!!!!
   var loadPlan = $(this).attr("id");
   //Pulls from local storage.
   var planLoad = localStorage.getItem(loadPlan);
