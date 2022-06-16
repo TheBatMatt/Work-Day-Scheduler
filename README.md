@@ -22,7 +22,7 @@ The planner is currently structured on a typcai 9-5 work shift. If I decide to g
 Feel free to reach out to me at:
 tedmjablonowski@gmail.com
 
-https://tedmjablonowski.github.io/Work-Day-Scheduler/
+https://TheBatMatt.github.io/Work-Day-Scheduler/
 
 ![screenshot](https://github.com/tedmjablonowski/Work-Day-Scheduler/blob/main/assets/images/work%20day%20planner%20screenshot.jpg)
 
